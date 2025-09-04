@@ -182,6 +182,28 @@ En la gráfica se observa el resultado de la convolución, que abarca desde la m
 # PARTE B: Correlacion Cruzada.
 En esta segunda parte del laboratorio, trabajamos con dos señales sinusoidales generadas matemáticamente para estudiar su relación y similitud utilizando el concepto de correlación cruzada.
 
+<img width="800" height="563" alt="image" src="https://github.com/user-attachments/assets/3b6f941f-139a-454f-8676-27f20dc77625" />
+ Imagen X1 [n] =cos (π/4n)
+muestra un coseno discreto con periodo de 8 muestras, que oscila entre -1 y 1 de forma simétrica, repitiéndose cada 8 puntos.
+
+
+<img width="800" height="563" alt="image" src="https://github.com/user-attachments/assets/5bf5e23a-046c-4bbb-8c76-89815506e177" />
+
+Imagen X2 [n] =sin (π/4n)
+
+
+<img width="768" height="563" alt="image" src="https://github.com/user-attachments/assets/307132b5-4c06-4e9d-82d1-90995dabc543" />
+Imagen [Correlacion cruzada] 
+
+La correlación cruzada confirma que las señales seno y coseno son ortogonales (desplazadas un cuarto de ciclo), mostrando picos positivos y negativos en función del retardo 
+k
+
+<img width="787" height="563" alt="image" src="https://github.com/user-attachments/assets/afd15713-871a-41df-ab99-9fcb737cdb66" />
+Imagen correlacion cruzada normalizada 
+
+
+
+
 
 
 # conclusiones
