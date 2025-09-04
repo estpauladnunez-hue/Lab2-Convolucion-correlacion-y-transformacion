@@ -114,6 +114,9 @@ Para cada integrante obtuvimos dos señales, la primera corresponde a la señal 
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/f236e0c2-5ba6-4cdf-9226-47fd80d8a89f" />
                 [1]Graficas de cedula y codigo-1er integrante.
 
+# Análisis de la Gráfica – Parte A: Paula Núñez
+
+
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/b202c676-2714-4218-9d51-89b214bd68eb" />
                 [2]Graficas de cedula y codigo-2do integrante.
 
