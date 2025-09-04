@@ -1,15 +1,20 @@
 # Lab2-Convolucion-correlacion-y-transformacion
-INTRDODUCCÍON 
+
+# INTRDODUCCÍON 
+
+
 En este laboratorio trabajamos con señales discretas obtenidas a partir de los dígitos de las cédulas y los códigos estudiantiles, con el fin de representarlas gráficamente y posteriormente realizar la operación de convolución entre ambas. Esta primera parte  permitió observar cómo, al combinar dos secuencias, se genera una nueva señal que refleja la interacción de los datos de entrada.
 
 En la segunda parte del trabajo generamos las  señales sinusoidales en Python y aplicamos la correlación cruzada para analizar su grado de similitud en función de un desplazamiento. Con esto pudimos comprobar cómo esta herramienta permite identificar relaciones entre señales periódicas y cómo se manifiestan en su representación gráfica.
 
 De esta manera, a través de la práctica logramos aplicar los conceptos de convolución y correlación cruzada vistos en clase, comprendiendo mejor su utilidad y su interpretación dentro del procesamiento de las señales.
 
-RESUMEN 
+# RESUMEN 
+
+
 En este laboratorio estudiamos dos operaciones fundamentales del procesamiento digital de señales: la convolución y la correlación cruzada. En la Parte A, se construyeron señales discretas a partir de los dígitos de la cédula y el código estudiantil de cada integrante, las cuales se representaron gráficamente y se combinaron mediante la convolución, obteniendo una nueva señal resultante. En la Parte B, se analizaron dos señales sinusoidales generadas matemáticamente, aplicando la correlación cruzada para determinar su grado de similitud. Los resultados obtenidos muestran cómo estas operaciones permiten caracterizar la interacción entre señales y medir relaciones temporales, destacando su importancia en aplicaciones como comunicaciones, filtrado digital y análisis de sistemas.
 
-MARCO TEORICO
+# MARCO TEORICO
 
 Señales discretas
 
@@ -22,9 +27,27 @@ La convolución es una operación que describe la salida de un sistema lineal e 
 
 
 <img width="220" height="85" alt="image" src="https://github.com/user-attachments/assets/0df4dfe5-16dc-4774-89da-02f0522020a6" />
+Imagen [1] Ecuación denominada Convolución entre las señales discretas.
 
+En la práctica, esta operación combina dos secuencias y refleja cómo una de ellas se ve modificada al pasar por un sistema descrito por la otra. En este laboratorio, la convolución permitió obtener una nueva señal que representa la unión entre cédula y código.
 
+Correlación cruzada
 
+La correlación cruzada es una medida de similitud entre dos señales en función de un desplazamiento temporal. Se define como:
+
+<img width="1287" height="302" alt="image" src="https://github.com/user-attachments/assets/7f7db1c4-2160-4f47-9f73-36304e464199" />
+Imagen [2] Correlación cruzada
+
+En comunicaciones, se utiliza para sincronizar señales, detectar patrones y estimar retardos. En este laboratorio se aplicó a dos señales sinusoidales para identificar sus relaciones temporales.
+
+Señales sinusoidales
+
+En la guía se definieron dos señales periódicas:
+<img width="736" height="78" alt="image" src="https://github.com/user-attachments/assets/7bcf984f-711c-4d8f-9f6e-ca41f09b36ce" />
+Imagen[3] Señales sinusoidales
+​
+T=1.25ms. Estas funciones son ortogonales en un periodo completo, lo que implica que su correlación será nula salvo en ciertos puntos, propiedad clave en telecomunicaciones y análisis espectral.
+​
 
 # PARTE A: Señales discretas y convolucion.
 Para la construccion de las señales iniciales se usaron los digitos de la cedula y del codigo estudiantil como base, se tomaron estos dos datos de cada integrante para representar una señal con cada dato, es decir una señal para la cedula y una señal para el codigo, en donde para esto la parte de nuestro codigo implementado fue:
