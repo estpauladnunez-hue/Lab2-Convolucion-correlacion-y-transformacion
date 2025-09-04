@@ -184,14 +184,6 @@ En esta segunda parte del laboratorio, trabajamos con dos señales sinusoidales 
 
 
 
-
-
-
-
-      
-
-
-
 # conclusiones
 Al finalizar este laboratorio comprendimos de manera práctica el funcionamiento y la utilidad de dos operaciones fundamentales en el procesamiento digital de señales: la convolución y la correlación cruzada.
 
