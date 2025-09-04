@@ -60,13 +60,13 @@ for integ in integrantes:
 ```
 Para cada integrante obtuvimos dos señales, la primera corresponde a la señal de la cedula y la segunda corresponde a la señal del codigo:
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/f236e0c2-5ba6-4cdf-9226-47fd80d8a89f" />
-[1]Graficas de cedula y codigo-1er integrante.
+ [1]Graficas de cedula y codigo-1er integrante.
 
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/b202c676-2714-4218-9d51-89b214bd68eb" />
-[2]Graficas de cedula y codigo-2do integrante.
+ [2]Graficas de cedula y codigo-2do integrante.
 
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/60655c62-1c79-46ed-a549-fe78086cea67" />
-[3]Graficas de cedula y codigo-3er integrante.
+ [3]Graficas de cedula y codigo-3er integrante.
 
 Una vez definidas estas dos señales para cada integrante, se realizo la convolucion entre ambas, este proceso combina la informacion de la cedula y el codigo, generando una nueva señal resultante con 16 puntos, la cual refleja el efecto conjunto de ambas secuencias, gracias a la implementacion de esta parte de nuestro codigo:
 ```python
