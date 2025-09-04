@@ -60,13 +60,13 @@ for integ in integrantes:
 ```
 Para cada integrante obtuvimos dos señales, la primera corresponde a la señal de la cedula y la segunda corresponde a la señal del codigo:
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/f236e0c2-5ba6-4cdf-9226-47fd80d8a89f" />
- [1]Graficas de cedula y codigo-1er integrante.
+                [1]Graficas de cedula y codigo-1er integrante.
 
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/b202c676-2714-4218-9d51-89b214bd68eb" />
- [2]Graficas de cedula y codigo-2do integrante.
+                [2]Graficas de cedula y codigo-2do integrante.
 
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/60655c62-1c79-46ed-a549-fe78086cea67" />
- [3]Graficas de cedula y codigo-3er integrante.
+                [3]Graficas de cedula y codigo-3er integrante.
 
 Una vez definidas estas dos señales para cada integrante, se realizo la convolucion entre ambas, este proceso combina la informacion de la cedula y el codigo, generando una nueva señal resultante con 16 puntos, la cual refleja el efecto conjunto de ambas secuencias, gracias a la implementacion de esta parte de nuestro codigo:
 ```python
@@ -85,13 +85,13 @@ Una vez definidas estas dos señales para cada integrante, se realizo la convolu
 ```
 Para cada integrante obtuvimos una tercera grafica mostrando la señal final obtenida tras la convolucion de cada integrante:
 <img width="842" height="474" alt="image" src="https://github.com/user-attachments/assets/7ae12003-5dfe-4737-8341-6fbc2075d389" />
-[4]Union (convolucion) datos del 1er integrante.
+                 [4]Union (convolucion) datos del 1er integrante.
 
 <img width="850" height="474" alt="image" src="https://github.com/user-attachments/assets/e6a32589-71ae-463f-9549-c8623d90e92d" />
-[5]Union (convolucion) datos del 2do integrante.
+                 [5]Union (convolucion) datos del 2do integrante.
 
 <img width="850" height="474" alt="image" src="https://github.com/user-attachments/assets/c5b4d4e5-25cf-4518-a8cd-c1e5c879e3e9" />
-[6]Union (convolucion) datos del 3er integrante.
+                 [6]Union (convolucion) datos del 3er integrante.
 
 # PARTE B: Correlacion Cruzada.
 En esta segunda parte del laboratorio, trabajamos con dos señales sinusoidales generadas matemáticamente para estudiar su relación y similitud utilizando el concepto de correlación cruzada.
