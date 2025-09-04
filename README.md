@@ -138,6 +138,13 @@ Comparando ambas señales, se puede decir que la de la cédula es más extensa y
 
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/60655c62-1c79-46ed-a549-fe78086cea67" />
                 [3]Graficas de cedula y codigo-3er integrante.
+# Análisis de la Gráfica – Parte A: Ana Maria Diaz 
+
+En la primera figura se observa la señal construida a partir de los dígitos de la cédula [1, 0, 1, 3, 2, 5, 9, 2, 9, 1]. Esta secuencia muestra valores que oscilan entre 0 y 9, con una distribución irregular de amplitudes. Se identifican valores bajos como los ceros en las posiciones 1 y 2, y también picos altos, especialmente en las posiciones 6 y 8, donde aparece el valor máximo de 9. Esto genera una señal que combina tramos de baja amplitud con variaciones bruscas hacia valores elevados, sin un patrón periódico definido, lo que refleja la naturaleza aleatoria de los datos al provenir de un número personal.
+
+En la segunda figura se representa la señal del código estudiantil [5, 6, 0, 0, 5, 8, 9]. A diferencia de la cédula, esta secuencia es más corta, pero presenta valores igualmente contrastantes. Se observan dos ceros consecutivos en las posiciones 2 y 3, que generan un intervalo de reposo, y picos altos en las posiciones finales con valores de 8 y 9, lo cual da un cierre abrupto a la señal. La disposición de ceros intercalados con valores altos resalta un comportamiento irregular y con saltos pronunciados.
+
+Comparando ambas señales, se puede afirmar que la de la cédula es más extensa y variada, con alternancia entre valores bajos y picos altos que generan una señal irregular y dispersa. En cambio, la del código estudiantil es más breve, pero concentra las amplitudes más significativas en sus últimos puntos. Este contraste evidencia que la cédula distribuye la variabilidad a lo largo de más posiciones, mientras que el código la concentra en pocos instantes destacados.
 
 Una vez definidas estas dos señales para cada integrante, se realizo la convolucion entre ambas, este proceso combina la informacion de la cedula y el codigo, generando una nueva señal resultante con 16 puntos, la cual refleja el efecto conjunto de ambas secuencias, gracias a la implementacion de esta parte de nuestro codigo:
 ```python
