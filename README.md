@@ -166,6 +166,8 @@ Una vez definidas estas dos señales para cada integrante, se realizo la convolu
 Para cada integrante obtuvimos una tercera grafica mostrando la señal final obtenida tras la convolucion de cada integrante:
 <img width="842" height="474" alt="image" src="https://github.com/user-attachments/assets/7ae12003-5dfe-4737-8341-6fbc2075d389" />
                  [4]Union (convolucion) datos del 1er integrante.
+                 
+ En la gráfica se observa el resultado de la convolución, la cual genera una señal más larga que las secuencias originales, extendiéndose desde la muestra 0 hasta la 15. La amplitud alcanza un máximo cercano a 90 en la posición 9, mostrando cómo la superposición de los valores de entrada refuerza ciertos puntos. La señal presenta un crecimiento progresivo hasta el pico máximo, seguido de un descenso gradual, lo que refleja el comportamiento característico de la convolución: acumulación inicial, punto de máxima coincidencia y luego disminución al agotarse las superposiciones.
 
 <img width="850" height="474" alt="image" src="https://github.com/user-attachments/assets/e6a32589-71ae-463f-9549-c8623d90e92d" />
                  [5]Union (convolucion) datos del 2do integrante.
