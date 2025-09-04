@@ -256,7 +256,8 @@ E2 = np.sum(x2**2)
 r12_norm = r12 / np.sqrt(E1 * E2)
 ```
 <img width="363" height="57" alt="image" src="https://github.com/user-attachments/assets/ce8504bc-539e-43b8-a519-e3308e6e675f" />
-[12]
+[12] Vlor de correlacion maxima
+
 Con este valor encontramos que la máxima correlación normalizada es muy baja, lo que confirma que las dos señales, aunque tienen la misma frecuencia, son ortogonales. Esto significa que no comparten fase y, por tanto, su similitud directa es mínima.
 
 Finalmente, representamos gráficamente los resultados de la correlación cruzada en dos figuras, gracias a esta parte de nuestro codigo:
@@ -293,6 +294,53 @@ Correlación cruzada normalizada:
 Ajustó los valores de la correlación a un rango comprendido entre -1 y 1, facilitando la interpretación de los resultados.
 <img width="787" height="563" alt="image" src="https://github.com/user-attachments/assets/afd15713-871a-41df-ab99-9fcb737cdb66" />
                 [13] correlacion cruzada normalizada 
+
+#PARTE C
+Para esta parte usamos una señal de neuropatia lumbar electromiografica biomedica estocastica de banda ancha descargada de fhysionet
+
+<img width="1280" height="501" alt="image" src="https://github.com/user-attachments/assets/eca0042b-97f6-4fd0-80e4-18fd4396ec8c" />
+
+Imagen[14] señal emg en le tiempo
+
+<img width="1280" height="484" alt="image" src="https://github.com/user-attachments/assets/2477a9b7-b2c1-47b2-a41c-872da333c366" />
+Imgagen [15] FFT magnitud 
+
+<img width="1280" height="486" alt="image" src="https://github.com/user-attachments/assets/3d69682f-2248-4b14-8aa6-9cdeca2262c5" />
+Imagen [16]Densidad espectral del potencia 
+
+
+Descripcion:
+Señal EMG: biomédica, estocástica, de banda ancha. Se considera cuasi-estacionaria en ventanas cortas.
+
+Informacion de registo :
+
+Número de canales: 1
+Canal analizado: 0
+Frecuencia muestreo (Fs): 4000.0000 Hz
+Muestras (N): 147858
+Duración: 36.965 s
+
+Estadisticos en el tiempo:
+    media:  0.004976
+   mediana:  0.008300
+  desv_std:  0.388390
+  varianza:  0.150847
+       min: -3.276700
+       max:  3.275300
+     rango:  6.552000
+       RMS:  0.388420
+ asimetría: -1.404344
+  curtosis:  21.952436
+
+  Estadisticos de frecuencia:
+  
+Frecuencia media   : 460.018 Hz
+Frecuencia mediana : 248.864 Hz
+Desv.Std frecuencia: 494.674 Hz
+
+<img width="1280" height="491" alt="image" src="https://github.com/user-attachments/assets/844640a9-4a73-4a08-9914-81350fb93ff2" />
+
+Imagen [17] Histograma de la señal 
 
 # Conclusiones
 Al finalizar este laboratorio comprendimos de manera práctica el funcionamiento y la utilidad de dos operaciones fundamentales en el procesamiento digital de señales: la convolución y la correlación cruzada.
