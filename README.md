@@ -128,6 +128,13 @@ Comparando ambas señales, se puede decir que la de la cédula es más extensa y
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/b202c676-2714-4218-9d51-89b214bd68eb" />
                 [2]Graficas de cedula y codigo-2do integrante.
                 
+# Análisis de la Gráfica – Parte A: Kevin 
+
+En la primera figura se observa la señal construida a partir de los dígitos de la cédula [1, 0, 7, 5, 6, 8, 7, 9, 3, 4]. Esta secuencia presenta una variación amplia de valores entre 0 y 9, lo que refleja una distribución dispersa de amplitudes. Se aprecia que algunos dígitos corresponden a valores bajos, como el 0 en la posición 1 y el 3 en la posición 8, mientras que otros alcanzan picos altos como el 9 en la posición 7 y el 8 en la posición 5. Esta variabilidad genera una señal irregular, sin un patrón periódico claro, lo cual es coherente con que los datos provienen de un número personal.
+
+En la segunda figura se representa la señal del código estudiantil [5, 6, 0, 0, 7, 1, 8]. Aquí se observa una secuencia más corta en comparación con la de la cédula, con valores que oscilan entre 0 y 8. Se destaca la presencia de dos ceros consecutivos en las posiciones 2 y 3, lo que genera un intervalo de reposo, mientras que en la última posición aparece el valor máximo de 8, que produce un pico al final de la señal. Este comportamiento evidencia un contraste marcado entre los valores bajos y los altos, generando saltos bruscos entre dígitos consecutivos.
+
+Comparando ambas señales, se puede decir que la de la cédula es más extensa y presenta mayor variedad de amplitudes distribuidas de manera irregular, mientras que la del código estudiantil es más breve y concentra los valores más significativos en ciertos puntos específicos. Este contraste entre extensión y variabilidad permite diferenciar el comportamiento de cada secuencia y resulta útil para el análisis de señales discretas.
 
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/60655c62-1c79-46ed-a549-fe78086cea67" />
                 [3]Graficas de cedula y codigo-3er integrante.
