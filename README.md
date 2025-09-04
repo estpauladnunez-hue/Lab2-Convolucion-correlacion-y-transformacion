@@ -181,31 +181,77 @@ En la gráfica se observa el resultado de la convolución, que abarca desde la m
 
 # PARTE B: Correlacion Cruzada.
 En esta segunda parte del laboratorio, trabajamos con dos señales sinusoidales generadas matemáticamente para estudiar su relación y similitud utilizando el concepto de correlación cruzada.
+w = 2 * np.pi * f * Ts
 
-import numpy as np
-import matplotlib.pyplot as plt
+x1 = np.cos(w * n)
+x2 = np.sin(w * n)
 
-#------------------- PARTE A - SEÑALES DISCRETAS----------------------
-#          Códigos, Cédulas y Unión por Convolución
+# Calculo de correlación cruzada
+N = len(n)
+lags = np.arange(-(N - 1), N)
+r12 = np.zeros(len(lags))
 
-# Datos de los integrantes:
-integrantes = [
-    {
-        "nombre": "Paula Núñez",
-        "codigo": [5, 6, 0, 0, 7, 2, 0],        # Código separado en dígitos
-        "cedula": [1, 0, 5, 3, 3, 2, 2, 1, 7, 6]  # Cédula separada en dígitos
-    },
-    {
-        "nombre": "Kevin Ducuara",
-        "codigo": [5, 6, 0, 0, 7, 1, 8],
-        "cedula": [1, 0, 7, 5, 6, 8, 7, 9, 3, 4]
-    },
-    {
-        "nombre": "Ana María Díaz",
-        "codigo": [5, 6, 0, 0, 5, 8, 9],
-        "cedula": [1, 0, 1, 3, 2, 5, 9, 2, 9, 1]
-    }
-]
+for i, k in enumerate(lags):
+    suma = 0
+    for ni in range(N):
+        nk = ni + k
+        if 0 <= nk < N:
+            suma += x1[ni] * x2[nk]
+    r12[i] = suma
+
+# Calculo de correlación normalizada
+E1 = np.sum(x1**2)
+E2 = np.sum(x2**2)
+r12_norm = r12 / np.sqrt(E1 * E2)
+
+# Grafica de las Señales originales
+plt.figure(figsize=(10, 5))
+plt.suptitle("Parte B - Señales Originales", fontsize=14)
+
+plt.subplot(2, 1, 1)
+plt.stem(n, x1, basefmt="k")
+plt.title("x1[n] = cos(w*n)")
+plt.ylabel("Amplitud")
+plt.grid()
+
+plt.subplot(2, 1, 2)
+plt.stem(n, x2, basefmt="k")
+plt.title("x2[n] = sin(w*n)")
+plt.xlabel("n (muestras)")
+plt.ylabel("Amplitud")
+plt.grid()
+
+plt.tight_layout(rect=[0, 0, 1, 0.95])
+plt.show()
+
+# Grafica de las Correlaciones
+plt.figure(figsize=(12, 6))
+plt.suptitle("Parte B - Correlaciones entre x1[n] y x2[n]", fontsize=14)
+
+plt.subplot(2, 1, 1)
+plt.stem(lags, r12, basefmt="k")
+plt.title("Correlación cruzada r12[k] (sin normalizar)")
+plt.xlabel("Retardo k")
+plt.ylabel("r12[k]")
+plt.grid()
+
+plt.subplot(2, 1, 2)
+plt.stem(lags, r12_norm, basefmt="k")
+plt.title("Correlación cruzada normalizada")
+plt.xlabel("Retardo k")
+plt.ylabel("Coeficiente")
+plt.grid()
+
+plt.tight_layout(rect=[0, 0, 1, 0.95])
+plt.show()
+
+# Mostrar en consola el máximo coeficiente de correlación
+max_corr = np.max(r12_norm)
+k_max = lags[np.argmax(r12_norm)]
+print(f"\nMáxima corre
+
+      
+
 
 
 # conclusiones
