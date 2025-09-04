@@ -181,3 +181,23 @@ En la gráfica se observa el resultado de la convolución, que abarca desde la m
 
 # PARTE B: Correlacion Cruzada.
 En esta segunda parte del laboratorio, trabajamos con dos señales sinusoidales generadas matemáticamente para estudiar su relación y similitud utilizando el concepto de correlación cruzada.
+# conclusiones
+Al finalizar este laboratorio comprendimos de manera práctica el funcionamiento y la utilidad de dos operaciones fundamentales en el procesamiento digital de señales: la convolución y la correlación cruzada.
+
+En la Parte A, al construir las señales a partir de los dígitos de mi cédula y código estudiantil, pude observar cómo se comportan gráficamente estas secuencias y cómo la convolución permite combinarlas en una nueva señal más larga que refleja la interacción entre ambas. Esto me ayudó a visualizar un concepto que en la teoría suele ser abstracto, pero que en la práctica se convierte en una herramienta clave para modelar sistemas lineales e invariantes en el tiempo.
+
+En la Parte B, con las señales sinusoidales definidas en la guía, confirmé que la correlación cruzada es un método efectivo para medir la similitud entre señales en función de un desplazamiento. Al aplicarla, noté cómo se pueden identificar los desfases donde existe mayor coincidencia, lo cual es de gran importancia en aplicaciones de telecomunicaciones, detección de patrones y análisis espectral.
+
+En general, este laboratorio permitió reforzar conocimientos teóricos, aplicarlos en Python y analizar los resultados obtenidos a través de gráficas y secuencias numéricas. Considero que la experiencia fue muy útil, ya que me ayudó a conectar la teoría con la práctica y a entender mejor la relevancia de estas operaciones en el campo de la ingeniería.
+# BIBLIOGRAFIA 
+Oppenheim, A. V., & Schafer, R. W. (2010). Discrete-Time Signal Processing (3rd ed.). Pearson.
+
+Proakis, J. G., & Manolakis, D. G. (2007). Digital Signal Processing: Principles, Algorithms, and Applications (4th ed.). Pearson Prentice Hall.
+
+Mitra, S. K. (2011). Digital Signal Processing: A Computer-Based Approach (4th ed.). McGraw-Hill.
+
+Hayes, M. H. (1996). Statistical Digital Signal Processing and Modeling. John Wiley & Sons.
+
+Universidad Militar Nueva Granada. (2022). Guía de Laboratorio 2: Convolución, correlación y transformación. Facultad de Ingeniería Biomédica. 
+
+Smith, S. W. (1997). The Scientist and Engineer’s Guide to Digital Signal Processing. California Technical Publishing. Disponible en: http://www.dspguide.com
