@@ -172,8 +172,12 @@ Para cada integrante obtuvimos una tercera grafica mostrando la señal final obt
 <img width="850" height="474" alt="image" src="https://github.com/user-attachments/assets/e6a32589-71ae-463f-9549-c8623d90e92d" />
                  [5]Union (convolucion) datos del 2do integrante.
 
+En la gráfica se aprecia el resultado de la convolución, que se extiende desde la muestra 0 hasta la 15. La señal muestra un crecimiento progresivo en amplitud hasta alcanzar su pico máximo cercano a 160 en la posición 8, lo que indica el punto de mayor coincidencia entre las secuencias originales. Después de este valor, la amplitud comienza a descender de manera gradual, reflejando la disminución de las superposiciones. El comportamiento general evidencia una forma triangular asimétrica, típica de la convolución, donde la energía se concentra en el centro de la señal.
+
 <img width="850" height="474" alt="image" src="https://github.com/user-attachments/assets/c5b4d4e5-25cf-4518-a8cd-c1e5c879e3e9" />
                  [6]Union (convolucion) datos del 3er integrante.
+
+En la gráfica se observa el resultado de la convolución, que abarca desde la muestra 0 hasta la 15. La señal inicia con valores bajos y va aumentando progresivamente hasta alcanzar su máximo cercano a 120 en la posición 9, lo que corresponde al punto de mayor solapamiento entre las secuencias. Posteriormente, la amplitud disminuye de manera gradual hasta llegar nuevamente a valores bajos. Este comportamiento refleja el patrón típico de la convolución: crecimiento inicial, un pico central marcado y un descenso simétrico hacia el final de la señal.
 
 # PARTE B: Correlacion Cruzada.
 En esta segunda parte del laboratorio, trabajamos con dos señales sinusoidales generadas matemáticamente para estudiar su relación y similitud utilizando el concepto de correlación cruzada.
