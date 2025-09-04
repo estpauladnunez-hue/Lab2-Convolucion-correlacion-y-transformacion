@@ -138,6 +138,8 @@ Comparando ambas señales, se puede decir que la de la cédula es más extensa y
 
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/60655c62-1c79-46ed-a549-fe78086cea67" />
                 [3]Graficas de cedula y codigo-3er integrante.
+
+                
 # Análisis de la Gráfica – Parte A: Ana Maria Diaz 
 
 En la primera figura se observa la señal construida a partir de los dígitos de la cédula [1, 0, 1, 3, 2, 5, 9, 2, 9, 1]. Esta secuencia muestra valores que oscilan entre 0 y 9, con una distribución irregular de amplitudes. Se identifican valores bajos como los ceros en las posiciones 1 y 2, y también picos altos, especialmente en las posiciones 6 y 8, donde aparece el valor máximo de 9. Esto genera una señal que combina tramos de baja amplitud con variaciones bruscas hacia valores elevados, sin un patrón periódico definido, lo que refleja la naturaleza aleatoria de los datos al provenir de un número personal.
