@@ -2,9 +2,9 @@
 
 #PARTE A: Señales discretas y convolucion.
 Para la construccion de las señales iniciales se usaron los digitos de la cedula y del codigo estudiantil como base, se tomaron estos dos datos de cada integrante para representar una señal con cada dato, es decir una señal para la cedula y una señal para el codigo, en donde para esto la parte de nuestro codigo implementado fue:
+```python
 import numpy as np
 import matplotlib.pyplot as plt
-```python
 #------------------- PARTE A - SEÑALES DISCRETAS----------------------
 #          Códigos, Cédulas y Unión por Convolución
 
@@ -25,7 +25,8 @@ integrantes = [
         "codigo": [5, 6, 0, 0, 5, 8, 9],
         "cedula": [1, 0, 1, 3, 2, 5, 9, 2, 9, 1]
     }
-]```
+]
+```
 Estas señales se graficaron individualmente para visualizar como varian sus valores, lo que nos permitio identificar patrones y distribuciones presentes en los datos personales de cada integrante, implementando esta parte de nuestro codigo:
 ```python
 # Graficar resultados por integrante
