@@ -1,4 +1,30 @@
 # Lab2-Convolucion-correlacion-y-transformacion
+INTRDODUCCÍON 
+En este laboratorio trabajamos con señales discretas obtenidas a partir de los dígitos de las cédulas y los códigos estudiantiles, con el fin de representarlas gráficamente y posteriormente realizar la operación de convolución entre ambas. Esta primera parte  permitió observar cómo, al combinar dos secuencias, se genera una nueva señal que refleja la interacción de los datos de entrada.
+
+En la segunda parte del trabajo generamos las  señales sinusoidales en Python y aplicamos la correlación cruzada para analizar su grado de similitud en función de un desplazamiento. Con esto pudimos comprobar cómo esta herramienta permite identificar relaciones entre señales periódicas y cómo se manifiestan en su representación gráfica.
+
+De esta manera, a través de la práctica logramos aplicar los conceptos de convolución y correlación cruzada vistos en clase, comprendiendo mejor su utilidad y su interpretación dentro del procesamiento de las señales.
+
+RESUMEN 
+En este laboratorio estudiamos dos operaciones fundamentales del procesamiento digital de señales: la convolución y la correlación cruzada. En la Parte A, se construyeron señales discretas a partir de los dígitos de la cédula y el código estudiantil de cada integrante, las cuales se representaron gráficamente y se combinaron mediante la convolución, obteniendo una nueva señal resultante. En la Parte B, se analizaron dos señales sinusoidales generadas matemáticamente, aplicando la correlación cruzada para determinar su grado de similitud. Los resultados obtenidos muestran cómo estas operaciones permiten caracterizar la interacción entre señales y medir relaciones temporales, destacando su importancia en aplicaciones como comunicaciones, filtrado digital y análisis de sistemas.
+
+MARCO TEORICO
+
+Señales discretas
+
+Una señal discreta es una secuencia de valores definida en instantes específicos de tiempo, generalmente representada por índices enteros. Son fundamentales en el procesamiento digital, pues permiten manipular información en sistemas computacionales. En este laboratorio, los dígitos de cédulas y códigos estudiantiles se emplearon como señales discretas de entrada.
+
+Convolución discreta
+
+La convolución es una operación que describe la salida de un sistema lineal e invariante en el tiempo (LTI) dado un estímulo de entrada. Matemáticamente, para dos señales X[n] y H[n] que se define como:
+
+
+
+<img width="220" height="85" alt="image" src="https://github.com/user-attachments/assets/0df4dfe5-16dc-4774-89da-02f0522020a6" />
+
+
+
 
 # PARTE A: Señales discretas y convolucion.
 Para la construccion de las señales iniciales se usaron los digitos de la cedula y del codigo estudiantil como base, se tomaron estos dos datos de cada integrante para representar una señal con cada dato, es decir una señal para la cedula y una señal para el codigo, en donde para esto la parte de nuestro codigo implementado fue:
