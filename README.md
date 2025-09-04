@@ -116,9 +116,18 @@ Para cada integrante obtuvimos dos señales, la primera corresponde a la señal 
 
 # Análisis de la Gráfica – Parte A: Paula Núñez
 
+En la primera figura se observa la señal construida a partir de los dígitos de la cédula:
+[1,0,5,3,3,2,2,1,7,6]. Esta secuencia presenta una variación de valores entre 0 y 7, lo que refleja una distribución dispersa de amplitudes. Se nota que los ceros y valores bajos se alternan con picos más altos (como en las posiciones 2, 8 y 9), generando una señal no periódica y sin un patrón repetitivo claro, lo cual es característico ya que los datos provienen de un número personal.
+
+En la segunda figura se representa la señal del código estudiantil :
+[5,6,0,0,7,2,0]. Aquí se observa una secuencia más corta que la de la cédula, con valores que oscilan entre 0 y 7. La presencia de varios ceros genera intervalos de reposo, intercalados con picos notables en las posiciones 0, 1 y 4. Esto provoca que la señal tenga un comportamiento más irregular y con saltos bruscos entre valores consecutivos.
+
+Comparando ambas señales, se puede decir que la de la cédula es más extensa y con mayor variedad de amplitudes, mientras que la del código es más breve y con valores concentrados en pocos puntos destacados. Este contraste será importante al momento de realizar la convolución, ya que el resultado reflejará cómo los picos del código se expanden sobre la señal de la cédula, generando una nueva secuencia que combina ambas características.
+
 
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/b202c676-2714-4218-9d51-89b214bd68eb" />
                 [2]Graficas de cedula y codigo-2do integrante.
+                
 
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/60655c62-1c79-46ed-a549-fe78086cea67" />
                 [3]Graficas de cedula y codigo-3er integrante.
