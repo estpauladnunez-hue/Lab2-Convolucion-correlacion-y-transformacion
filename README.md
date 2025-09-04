@@ -2,12 +2,11 @@
 
 # INTRDODUCCÍON 
 
+El análisis y procesamiento de señales discretas constituye una herramienta fundamental dentro de la ingeniería, ya que permite estudiar el comportamiento de datos en el dominio digital y extraer información relevante para su aplicación en diversos campos. En este laboratorio se abordaron dos operaciones esenciales en el tratamiento de señales: la convolución y la correlación cruzada.
 
-En este laboratorio trabajamos con señales discretas obtenidas a partir de los dígitos de las cédulas y los códigos estudiantiles, con el fin de representarlas gráficamente y posteriormente realizar la operación de convolución entre ambas. Esta primera parte  permitió observar cómo, al combinar dos secuencias, se genera una nueva señal que refleja la interacción de los datos de entrada.
+La primera de ellas, la convolución, es clave para comprender cómo interactúan dos secuencias al combinarse, lo cual resulta indispensable en el diseño y análisis de sistemas lineales e invariantes en el tiempo. Por su parte, la correlación cruzada es un procedimiento que permite medir el grado de similitud entre dos señales en función de un desplazamiento temporal, lo que la hace especialmente útil en aplicaciones de detección, comparación y análisis de señales periódicas.
 
-En la segunda parte del trabajo generamos las  señales sinusoidales en Python y aplicamos la correlación cruzada para analizar su grado de similitud en función de un desplazamiento. Con esto pudimos comprobar cómo esta herramienta permite identificar relaciones entre señales periódicas y cómo se manifiestan en su representación gráfica.
-
-De esta manera, a través de la práctica logramos aplicar los conceptos de convolución y correlación cruzada vistos en clase, comprendiendo mejor su utilidad y su interpretación dentro del procesamiento de las señales.
+A través de esta práctica, se buscó reforzar los conceptos vistos en clase, trasladándolos a un entorno de programación en Python que facilitó la construcción, visualización e interpretación de las señales, brindando una perspectiva más clara de su utilidad en el procesamiento digital de señales.
 
 # RESUMEN 
 
@@ -112,7 +111,7 @@ for integ in integrantes:
 ```
 Para cada integrante obtuvimos dos señales, la primera corresponde a la señal de la cedula y la segunda corresponde a la señal del codigo:
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/f236e0c2-5ba6-4cdf-9226-47fd80d8a89f" />
-                [1]Graficas de cedula y codigo-1er integrante.
+                [4]Graficas de cedula y codigo-1er integrante.
 
 # Análisis de la Gráfica – Parte A: Paula Núñez
 
@@ -126,7 +125,7 @@ Comparando ambas señales, se puede decir que la de la cédula es más extensa y
 
 
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/b202c676-2714-4218-9d51-89b214bd68eb" />
-                [2]Graficas de cedula y codigo-2do integrante.
+                [5]Graficas de cedula y codigo-2do integrante.
                 
 # Análisis de la Gráfica – Parte A: Kevin 
 
@@ -137,7 +136,7 @@ En la segunda figura se representa la señal del código estudiantil [5, 6, 0, 0
 Comparando ambas señales, se puede decir que la de la cédula es más extensa y presenta mayor variedad de amplitudes distribuidas de manera irregular, mientras que la del código estudiantil es más breve y concentra los valores más significativos en ciertos puntos específicos. Este contraste entre extensión y variabilidad permite diferenciar el comportamiento de cada secuencia y resulta útil para el análisis de señales discretas.
 
 <img width="1189" height="494" alt="image" src="https://github.com/user-attachments/assets/60655c62-1c79-46ed-a549-fe78086cea67" />
-                [3]Graficas de cedula y codigo-3er integrante.
+                [6]Graficas de cedula y codigo-3er integrante.
 
                 
 # Análisis de la Gráfica – Parte A: Ana Maria Diaz 
@@ -165,48 +164,137 @@ Una vez definidas estas dos señales para cada integrante, se realizo la convolu
 ```
 Para cada integrante obtuvimos una tercera grafica mostrando la señal final obtenida tras la convolucion de cada integrante:
 <img width="842" height="474" alt="image" src="https://github.com/user-attachments/assets/7ae12003-5dfe-4737-8341-6fbc2075d389" />
-                 [4]Union (convolucion) datos del 1er integrante.
+                 [7]Union (convolucion) datos del 1er integrante.
                  
  En la gráfica se observa el resultado de la convolución, la cual genera una señal más larga que las secuencias originales, extendiéndose desde la muestra 0 hasta la 15. La amplitud alcanza un máximo cercano a 90 en la posición 9, mostrando cómo la superposición de los valores de entrada refuerza ciertos puntos. La señal presenta un crecimiento progresivo hasta el pico máximo, seguido de un descenso gradual, lo que refleja el comportamiento característico de la convolución: acumulación inicial, punto de máxima coincidencia y luego disminución al agotarse las superposiciones.
 
 <img width="850" height="474" alt="image" src="https://github.com/user-attachments/assets/e6a32589-71ae-463f-9549-c8623d90e92d" />
-                 [5]Union (convolucion) datos del 2do integrante.
+                 [8]Union (convolucion) datos del 2do integrante.
 
 En la gráfica se aprecia el resultado de la convolución, que se extiende desde la muestra 0 hasta la 15. La señal muestra un crecimiento progresivo en amplitud hasta alcanzar su pico máximo cercano a 160 en la posición 8, lo que indica el punto de mayor coincidencia entre las secuencias originales. Después de este valor, la amplitud comienza a descender de manera gradual, reflejando la disminución de las superposiciones. El comportamiento general evidencia una forma triangular asimétrica, típica de la convolución, donde la energía se concentra en el centro de la señal.
 
 <img width="850" height="474" alt="image" src="https://github.com/user-attachments/assets/c5b4d4e5-25cf-4518-a8cd-c1e5c879e3e9" />
-                 [6]Union (convolucion) datos del 3er integrante.
+                 [9]Union (convolucion) datos del 3er integrante.
 
 En la gráfica se observa el resultado de la convolución, que abarca desde la muestra 0 hasta la 15. La señal inicia con valores bajos y va aumentando progresivamente hasta alcanzar su máximo cercano a 120 en la posición 9, lo que corresponde al punto de mayor solapamiento entre las secuencias. Posteriormente, la amplitud disminuye de manera gradual hasta llegar nuevamente a valores bajos. Este comportamiento refleja el patrón típico de la convolución: crecimiento inicial, un pico central marcado y un descenso simétrico hacia el final de la señal.
 
 # PARTE B: Correlacion Cruzada.
 En esta segunda parte del laboratorio, trabajamos con dos señales sinusoidales generadas matemáticamente para estudiar su relación y similitud utilizando el concepto de correlación cruzada.
 
+Para generar las señales, definimos dos funciones periódicas discretas: 
+x1​[n]=cos(w⋅n)
+x2​[n]=sin(w⋅n)
+donde w=2πf⋅Ts, con f=100Hz como frecuencia de la señal y Ts=1.25ms como periodo de muestreo. Para lo cual implementamos esta parte de nuestro codigo, generando nueve muestras para cada señal:
+
+```python
+# Definicion de las señales
+Ts = 1.25e-3      # Periodo de muestreo (1.25 ms)
+f = 100           # Frecuencia en Hz
+n = np.arange(0, 9)
+w = 2 * np.pi * f * Ts
+
+x1 = np.cos(w * n)
+x2 = np.sin(w * n)
+
+# Grafica de las Señales originales
+plt.figure(figsize=(10, 5))
+plt.suptitle("Parte B - Señales Originales", fontsize=14)
+
+plt.subplot(2, 1, 1)
+plt.stem(n, x1, basefmt="k")
+plt.title("x1[n] = cos(w*n)")
+plt.ylabel("Amplitud")
+plt.grid()
+
+plt.subplot(2, 1, 2)
+plt.stem(n, x2, basefmt="k")
+plt.title("x2[n] = sin(w*n)")
+plt.xlabel("n (muestras)")
+plt.ylabel("Amplitud")
+plt.grid()
+
+plt.tight_layout(rect=[0, 0, 1, 0.95])
+plt.show()
+```
+Luego, al graficarlas pudimos observar que ambas son señales periódicas, pero presentan un desfase de 90° debido a la diferencia entre las funciones seno y coseno. Esto significa que cuando X1[n] alcanza su valor maximo, X2[n] se encuentra en cero, y viceversa.
+
 <img width="800" height="563" alt="image" src="https://github.com/user-attachments/assets/3b6f941f-139a-454f-8676-27f20dc77625" />
- Imagen X1 [n] =cos (π/4n)
-muestra un coseno discreto con periodo de 8 muestras, que oscila entre -1 y 1 de forma simétrica, repitiéndose cada 8 puntos.
+                     [10] X1[n] =cos (π/4n)
+muestra un coseno discreto que inicia en su maxima amplitud positiva, lo cual es caracteristico del coseno, presentando una variacion periodica drecreciendo hacia valores negativos, para finalmente retornar a su amplitud inicial.
 
 
 <img width="800" height="563" alt="image" src="https://github.com/user-attachments/assets/5bf5e23a-046c-4bbb-8c76-89815506e177" />
 
-Imagen X2 [n] =sin (π/4n)
+                     [11] X2 [n] =sin (π/4n)
+esta imagen muestra un seno discreto , comenzando en cero, alcanza un valor maximo positivo en n=2, y posteriormente disminuye atravesando valores negativos antes de regresar a cero.
+Ambas señales tienen la misma frecuencia angular y, por lo tanto, la misma periodicidad, pero presentan un desfase de π/2 radianes. Este desfase se aprecia porque los máximos y mínimos de X1[n] ocurren medio periodo antes que los de X2 [n]. La amplitud en ambas señales está limitada entre -1 y 1, como corresponde a funciones trigonométricas puras sin escalamiento.
 
+Posteriormente, calculamos la correlación cruzada entre ambas señales para determinar qué tan similares son en función del desplazamiento entre ellas.
+Implementando esta parte de nuestro codigo, este cálculo se realizó de dos maneras:
+```python
+# Mostrar en consola el máximo coeficiente de correlación
+max_corr = np.max(r12_norm)
+k_max = lags[np.argmax(r12_norm)]
+print(f"\nMáxima correlación normalizada = {max_corr:.3f} en k = {k_max}")
 
+# Calculo de correlación cruzada
+N = len(n)
+lags = np.arange(-(N - 1), N)
+r12 = np.zeros(len(lags))
+
+for i, k in enumerate(lags):
+    suma = 0
+    for ni in range(N):
+        nk = ni + k
+        if 0 <= nk < N:
+            suma += x1[ni] * x2[nk]
+    r12[i] = suma
+
+# Calculo de correlación normalizada
+E1 = np.sum(x1**2)
+E2 = np.sum(x2**2)
+r12_norm = r12 / np.sqrt(E1 * E2)
+```
+<img width="363" height="57" alt="image" src="https://github.com/user-attachments/assets/ce8504bc-539e-43b8-a519-e3308e6e675f" />
+[12]
+Con este valor encontramos que la máxima correlación normalizada es muy baja, lo que confirma que las dos señales, aunque tienen la misma frecuencia, son ortogonales. Esto significa que no comparten fase y, por tanto, su similitud directa es mínima.
+
+Finalmente, representamos gráficamente los resultados de la correlación cruzada en dos figuras, gracias a esta parte de nuestro codigo:
+```python
+# Grafica de las Correlaciones
+plt.figure(figsize=(12, 6))
+plt.suptitle("Parte B - Correlaciones entre x1[n] y x2[n]", fontsize=14)
+
+plt.subplot(2, 1, 1)
+plt.stem(lags, r12, basefmt="k")
+plt.title("Correlación cruzada r12[k] (sin normalizar)")
+plt.xlabel("Retardo k")
+plt.ylabel("r12[k]")
+plt.grid()
+
+plt.subplot(2, 1, 2)
+plt.stem(lags, r12_norm, basefmt="k")
+plt.title("Correlación cruzada normalizada")
+plt.xlabel("Retardo k")
+plt.ylabel("Coeficiente")
+plt.grid()
+
+plt.tight_layout(rect=[0, 0, 1, 0.95])
+plt.show()
+```
+
+Correlación cruzada no normalizada: 
+Nos permitió observar la magnitud absoluta de la similitud entre las señales, considerando directamente sus valores sin escalamiento.
 <img width="768" height="563" alt="image" src="https://github.com/user-attachments/assets/307132b5-4c06-4e9d-82d1-90995dabc543" />
-Imagen [Correlacion cruzada] 
+                 [12] Correlacion cruzada.
+Con esta observamos  que la correlacion maxima ocurre alrededor de k=2 y k=-7, donde le valor r12 alcanza su pico positivo, ademas en los retardos en -2 y 3, los valores minimos negativos indican maxima oposicion entre las señales, lo que quiere decir que mientras una señal esta en su maximo la otra esta en su minimo, y esta sorma simetrica es coherente con la naturaleza periodica y desfasada de seno y coseno.
 
-La correlación cruzada confirma que las señales seno y coseno son ortogonales (desplazadas un cuarto de ciclo), mostrando picos positivos y negativos en función del retardo 
-k
-
+Correlación cruzada normalizada:
+Ajustó los valores de la correlación a un rango comprendido entre -1 y 1, facilitando la interpretación de los resultados.
 <img width="787" height="563" alt="image" src="https://github.com/user-attachments/assets/afd15713-871a-41df-ab99-9fcb737cdb66" />
-Imagen correlacion cruzada normalizada 
+                [13] correlacion cruzada normalizada 
 
-
-
-
-
-
-# conclusiones
+# Conclusiones
 Al finalizar este laboratorio comprendimos de manera práctica el funcionamiento y la utilidad de dos operaciones fundamentales en el procesamiento digital de señales: la convolución y la correlación cruzada.
 
 En la Parte A, al construir las señales a partir de los dígitos de mi cédula y código estudiantil, pude observar cómo se comportan gráficamente estas secuencias y cómo la convolución permite combinarlas en una nueva señal más larga que refleja la interacción entre ambas. Esto me ayudó a visualizar un concepto que en la teoría suele ser abstracto, pero que en la práctica se convierte en una herramienta clave para modelar sistemas lineales e invariantes en el tiempo.
