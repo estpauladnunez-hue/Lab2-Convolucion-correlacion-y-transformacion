@@ -181,6 +181,33 @@ En la gráfica se observa el resultado de la convolución, que abarca desde la m
 
 # PARTE B: Correlacion Cruzada.
 En esta segunda parte del laboratorio, trabajamos con dos señales sinusoidales generadas matemáticamente para estudiar su relación y similitud utilizando el concepto de correlación cruzada.
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+#------------------- PARTE A - SEÑALES DISCRETAS----------------------
+#          Códigos, Cédulas y Unión por Convolución
+
+# Datos de los integrantes:
+integrantes = [
+    {
+        "nombre": "Paula Núñez",
+        "codigo": [5, 6, 0, 0, 7, 2, 0],        # Código separado en dígitos
+        "cedula": [1, 0, 5, 3, 3, 2, 2, 1, 7, 6]  # Cédula separada en dígitos
+    },
+    {
+        "nombre": "Kevin Ducuara",
+        "codigo": [5, 6, 0, 0, 7, 1, 8],
+        "cedula": [1, 0, 7, 5, 6, 8, 7, 9, 3, 4]
+    },
+    {
+        "nombre": "Ana María Díaz",
+        "codigo": [5, 6, 0, 0, 5, 8, 9],
+        "cedula": [1, 0, 1, 3, 2, 5, 9, 2, 9, 1]
+    }
+]
+
+
 # conclusiones
 Al finalizar este laboratorio comprendimos de manera práctica el funcionamiento y la utilidad de dos operaciones fundamentales en el procesamiento digital de señales: la convolución y la correlación cruzada.
 
